@@ -19,5 +19,11 @@ public class userRegistrationTestTest {
         assertEquals(true,registration.toValidateLastName("Swaraj"));
 
     }
+    @Test
+    public void validateEmail()
+    {
+        UserRegistration registration=new UserRegistration();
+        assertEquals(true,registration.toValidateEmails("abc.xyz@yahoo.co.in"));
 
+    }
 }

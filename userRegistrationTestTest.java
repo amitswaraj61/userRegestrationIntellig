@@ -12,5 +12,12 @@ public class userRegistrationTestTest {
         UserRegistration registration=new UserRegistration();
         assertEquals(true,registration.toValidateFirstName("Amit"));
     }
+    @Test
+    public void validateLastName()
+    {
+        UserRegistration registration=new UserRegistration();
+        assertEquals(true,registration.toValidateLastName("Swaraj"));
+
+    }
 
 }
